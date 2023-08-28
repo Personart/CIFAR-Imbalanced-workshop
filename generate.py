@@ -29,3 +29,6 @@ with open('test_data.pkl', 'wb') as f:
 
 print(f"Imbalanced dataset created with {len(imbalanced_data)} samples. Data saved to 'imbalanced_data.pkl'")
 print(f"Test dataset created with {len(x_test)} samples. Data saved to 'test_data.pkl'")
+
+if not os.path.exists('models'):
+    os.makedirs('models')
